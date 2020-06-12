@@ -78,8 +78,9 @@
                         arrays.append(arr)
                         age_start += 1
                         df_start += 4
-                        df = pd.DataFrame(arrays, columns=column_headers)
-                        df.to_csv(f'../cdc_mening_scrape/data/mening{year}.csv')
+
+                    df = pd.DataFrame(arrays, columns=column_headers)
+                    df.to_csv(f'../cdc_mening_scrape/data/mening{year}.csv')
             </xmp>
             <br>
             <p>Same code as above however some of the starts are slightly modified to adjust for additional age groupings in the rate tables.</p>
